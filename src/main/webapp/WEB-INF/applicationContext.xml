@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">  
+	
+
+	<bean id = "User" class = "beans.UserBean"/>
+	<bean id ="UsersDAO"  class ="DAO.UsersDAO"/>   
+	<bean id ="Articles_stock"  class ="beans.Articles_stock"/>
+	<bean id ="ArticlesDAO"  class ="DAO.ArticlesDAO"/>
+	<bean id ="Appro"  class ="beans.Appro"/>
+	<bean id ="ApproDAO"  class ="DAO.ApproDAO"/>
+	<bean id ="Orders"  class ="beans.Orders"/>
+	<bean id ="OrdersDAO"  class ="DAO.OrdersDAO"/>
+	
+
+</beans>  

@@ -1,0 +1,281 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap')
+	;
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	color: #fff;
+	font-size: 17px;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+.content {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	width: calc(100% -4rem);
+	margin-left: 4rem;
+}
+
+/*------------ start sidebar styling -------------*/
+.sidebar {
+	width: 4rem;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	z-index: 100;
+	cursor: pointer;
+	background: #4169E1;
+	transition: 0.5s;
+	overflow: hidden;
+}
+
+.sidebar:hover {
+	width: 12rem;
+}
+
+.brand {
+	text-align: center;
+	font-size: 1.4rem;
+	padding: 1rem 0;
+	color: #fff;
+	background-color: #FFF3D9;
+	border-right: 4d4d4d;
+}
+
+.brand span {
+	display: none;
+}
+
+.nav-list {
+	list-style: none;
+}
+
+.nav-item {
+	padding: 1rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.nav-item:hover {
+	background: #344bce;
+}
+
+.nav-item a {
+	position: relative;
+	white-space: nowrap;
+	display: flex;
+	gap: 1rem;
+}
+
+.nav-item__icon {
+	position: relative;
+	font-size: 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: rgba(14, 76, 116, 255);
+	padding: 0;
+	margin: 0;
+	width: 2rem;
+}
+
+.nav-item__text {
+	position: relative;
+	display: none;
+	font-size: 1rem;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.05em;
+}
+
+.avatar {
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 0.8em;
+	font-weight: 700;
+}
+
+.logout {
+	margin-left: 0.2rem;
+}
+
+.sidebar:hover .brand span {
+	display: inline;
+}
+
+.sidebar:hover .nav-item {
+	justify-content: start;
+}
+
+.sidebar:hover .nav-item__text {
+	display: flex;
+	align-items: center;
+}
+
+.admin-name {
+	font-weight: 700;
+	font-size: 20px !important;
+}
+
+.logout-btn {
+	background-color: transparent;
+	color: rgba(14, 76, 116, 255);
+	font-weight: 500;
+	font-size: 1rem;
+	padding: 0;
+	border: none;
+	cursor: pointer;
+}
+
+/*------------ end sidebar styling -------------*/
+
+/*------------ start the right section styling -------------*/
+.content {
+	flex: 1;
+	padding: 20px;
+	box-sizing: border-box;
+	overflow-y: auto;
+	width: calc(100% -4rem);
+	margin-left: 4rem;
+}
+
+/*------------ charts ----------*/
+
+
+.grid-container {
+	margin-left:20%;
+	margin-top:20px;
+	width:60%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 20px 60px;
+}
+
+.grid-item {
+	border: 1px solid #ddd;
+	padding: 40px;
+}
+
+/*------------- stats -------------------*/
+.stat-card {
+	width: 100%;
+	height: 150px;
+	background-color: #f8f7f7ea;
+	position: relative;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 20px;
+}
+
+.stat-card .left {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.stat-card .left .number {
+	font-size: 30px;
+	font-weight: 600;
+	color: rgb(255, 102, 0);
+}
+
+.stat-card .left .title {
+	font-size: 16px;
+	margin-top: 5px;
+	font-weight: 500;
+}
+
+.stat-card .right {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.stat-card .right .icon {
+	width: 50px;
+	height: 50px;
+	font-size: 40px;
+}
+
+.stat-card .footer {
+	width: 90%;
+	height: 10px;
+	background-color: #ff6600;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+}
+
+#first {
+	background-color: #ff6600;
+}
+
+#second {
+	background-color: #0e4b74;
+}
+
+#third {
+	background-color: #1A5653;
+}
+
+#fourth {
+	background-color: #fbd80f;
+}
+
+#fifth {
+	background-color: #4169E1;
+}
+#nb-orders {
+	color: #0e4b74;
+}
+
+#nb-coming-today {
+	color: #fbd80f;
+}
+
+#nb-appros {
+	color: #1A5653;
+}
+
+#nb-users {
+	color: #4169E1;
+}
+
+/*------- material-symbols --------*/
+.material-symbols-outlined {
+	padding-right:25px;
+	font-size: 66px !important; 
+	font-variation-settings:
+	'FILL' 0,
+	'wght' 600,
+	'GRAD' 0,
+	'opsz' 48
+}
